@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #fff;
+    --orange: rgb(255, 94, 0);
+    --bleu: rgb(0, 238, 255);
+    --rouge: red;
+    --marron: brown;
+    --noir: rgb(87, 86, 86);
+    --bleufonce: rgb(4, 4, 100);
+    --orangclair: orange;
+}
+
+.header{ 
+    background-image:url('/images/6.jpg'), linear-gradient(rgb(0,0,0,0.6), rgb(0,0,0,0.6));
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    
+     
+}
+
+.header .nav{
+    display: flex;
+    width: 100%;
+    
+}
+
+.nav .logo{
+    flex: 25%;
+    width: 100%;
+    position: relative;
+    left: 12%;
+    margin: 30px;
+}
+
+.nav .logo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+
+
+
+.nav .entete{
+    flex: 60%;
+    position: relative;
+    right: 35px;
+    margin: 30px;
+    
+}
+
+.nav .entete ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav .entete ul li {
+    list-style-type: none;
+}
+
+.nav .entete ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav .ente{
+    flex: 25%;
+    position: relative;
+    right: 15px;
+    margin: 30px;
+}
+
+.nav .ente{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.nav .ente{
+    list-style: none; 
+}
+
+.nav .ente a{
+    text-decoration: none; 
+    color: var(--white);
+}
+
+.nav .ente .btn1{
+    background-color: var(--orange);
+    padding: 15px; 
+    border-radius: 5px;
+    position: relative;
+    bottom: 12px;
+}
+
+.milieu{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    text-align: center;
+    color: var(--white);
+    margin-top: 10%;
+}
+
+.milieu .btn2{
+    text-decoration: none;
+    color: var(--orangclair);
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.milieu .btn2:hover{
+    color: var(--white);
+}
+
+.milieu h1{
+    margin: 20px;
+    font-size: 3rem;
+}
+.milieu p{
+    margin: 30px;
+    font-size: 1.2rem;
+}
+
+.milieu .btn3{
+    text-decoration: none;
+    margin: 15px;
+    color: var(--white);
+    background-color: var(--orangclair);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.milieu .btn3:hover{
+    color: black;
+    background-color: var(--white);
+}
+.section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .item{
+    background-color: #f8f5f5; 
+    position: relative;
+    width: 100%;
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 20px 15px 35px rgb(0, 0, 0, o.8);
+    margin-right: 50px;
+    margin-left: 50px;
+    bottom: 60px;
+}
+.container .item .icon{
+    font-size: 2rem;
+    color: var(--rouge);
+    background-color: var(--bleu);
+    padding: 10px;
+}
+
+.container .item h4{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    right: 15px;
+}
+
+.container .ite{
+    background-color: var(--orange);
+    color: white;
+}
+
+.container .item .line{
+    border: 1px solid red;
+    width: 15%;
+    position: relative;
+    margin: 10px;
+    right: 3%;
+}
+
+.container .ite .line{
+    border: 1px solid white;
+}
+
+.home .banner{
+    width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home .banner.banner-img{
+	position: relative;
+	flex-basis: 50%;
+	display: flex;
+	justify-content: flex-start;
+	z-index: 1;
+	left: 300px;
+}
+.banner-img .banner-img-container{
+	position: relative;
+	width: 400px;
+	z-index: 2;
+}
+.banner-img .banner-img-container img{
+	width: 100%;
+	height: auto;
+}
+.banner-img .banner-img-container .states{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.banner-img-container .states .total-courses{
+	position: absolute;
+	padding: 6px 10px 6px 6px;
+	background-color: var(--light-heading-clr);
+	border-radius: 5px;
+	bottom: 15%;
+	left: 10px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+}
+.states .total-courses .icon{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-clr);
+	margin-right: 7px;
+}
+.states .total-courses .icon i{
+	font-size: 22px;
+	color: var(--light-heading-clr);
+}
+.states .total-courses .desc{
+	display: flex;
+	flex-direction: column;
+}
+.states .total-courses .desc span:nth-child(1){
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 2px;
+}
+.states .total-courses .desc span:nth-child(2){
+	font-size: 15px;
+}
+
+.banner-img-container .states .courses-ratings{
+	position: relative;
+	width: 90px;
+	height: 90px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: var(--light-heading-clr);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 80px;
+	left: 350px;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+}
+.states .courses-ratings span:nth-child(1){
+	color: var(--dark-heading-clr);
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+}
+.states .courses-ratings span:nth-child(1) i{
+	color: gold;
+	font-size: 14px;
+}
+.states .courses-ratings span:nth-child(2){
+	color: var(--dark-text-clr);
+	font-size: 15px;
+	text-align: center;
+}
+.banner-img .banner-img-container .pattern{
+	position: absolute;
+	top: 20px;
+	left: -40px;
+	z-index: -1;
+}
+.banner-img-container .pattern img{
+	width: 150px;
+	height: auto;
+	opacity: 0.4;
+}
+
+
+.banner .banner-desc{
+	position: relative;
+	right: 100px;
+}
+.banner .banner-desc .lines{
+	border: 3px solid red;
+    width: 20%;
+    position: relative;
+    margin: 10px;
+}
+
+.banner .banner-desc h2{
+	font-size: 2.5rem;
+	color: var(--dark-heading-clr);
+	letter-spacing: 1px;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+.banner .banner-desc p{
+	color: var(--dark-text-clr);
+	line-height: 1.4;
+	margin-bottom: 50px;
+	font-size: 1.2rem;
+}
+
+.banner .banner-desc a{
+	color: var(--rouge);
+	margin: 20px;
+	padding: 30px;
+	text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.parag .par  .red{
+    color: var(--rouge);
+    font-size: 1.4rem;
+    margin: 30px;
+}
+
+.parag .par h2{
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 30px;
+}
+
+.parag .par p{
+    font-size: 1.4rem;
+    margin: 30px;
+}
+
+.containerer{
+    margin-top: 100px;
+  }
+  
+  .containerer h1{
+    text-align: center;
+    line-height: 1.4;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .containerer .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+  }
+   
+  .containerer .contenu .contenant{
+    width: 350px;
+    margin-top: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgb(0, 0, 0, o.8);
+  }
+  
+  .containerer .contenu .contenant .cont-img{
+    position: relaitive;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .containerer .contenu .contenant .cont-img img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .containerer .contenu .contenant .cont-img .bla{
+    position: relative;
+    bottom: 280px;
+    left: 10px;
+    color: var(--white);
+    background-color: var(--rouge);
+    margin-right: 260px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .containerer .contenu .contenant .cont-img .icone{
+    position: relative;
+    bottom: 100px;
+    margin-left: 50px;
+  } 
+
+.containerer .contenu .contenant .cont-img .icone a i{
+    margin: 15px;
+    color: var(--white);
+    background-color: rgb(217, 218, 219);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.containerer .contenu .contenant .cont-img .icone a i:hover{
+    color: black;
+}
+
+.containerer .contenu .contenant .cont-para{
+    padding: 15px;
+    letter-spacing: 1.4;
+}
+
+.containerer .contenu .contenant .cont-para .pa{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--rouge);
+}
+
+.containerer .contenu .contenant .cont-para .pa span{
+    color: var(--white);
+    background-color: var(--bleufonce);
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.containerer .contenu .contenant .cont-para .pa span i{
+    color: yellow;
+}
+
+.containerer .contenu .contenant .cont-para h5{
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.containerer .contenu .contenant .cont-para p{
+    padding: 5px;
+    margin-bottom: 10px; 
+}
+
+.containerer .contenu .contenant .cont-para .gras{
+    font-weight: bold;
+}
+
+.containerer .contenu .contenant .cont-para p span{
+    color: var(--bleufonce);
+    font-weight: bold;
+}
+
+.containerer .contenu .contenant .cont-para button{
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--rouge);
+    border: 1px solid var(--rouge);
+    background-color: var(--white);
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    min-height: 100vh;
+  }
+  
+  .items .item1 .lines{
+    border: 1px solid red;
+    width: 20%;
+    position: relative;
+    left: 8%;
+  }
+
+  .item1 {
+    position: relative;
+	flex-basis: 50%;
+	max-width: 700px;
+	z-index: 2;
+  }
+
+  .item1 h1{
+    font-size: 55px;
+	letter-spacing: 1px;
+	line-height: 1.4;
+	margin: 0px 0px 0px 40px;
+  }
+
+  .item1 p{
+	line-height: 1.4;
+	margin: 40px;
+  padding: 20px;
+  }
+
+  .item1 button{
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--rouge);
+    border: 1px solid var(--rouge);
+    background-color: var(--white);
+  }
+  .item2{
+    margin-right: ;
+  }
